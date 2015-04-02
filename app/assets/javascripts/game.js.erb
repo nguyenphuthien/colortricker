@@ -1,0 +1,16 @@
+var game = new Phaser.Game(400,500, Phaser.AUTO, 'gameplay');
+
+var mainState ={
+	preload: function(){
+		this.label = game.add.text(game.width/2, game.height/2, "heheheh", {font : "40 Arial Bold", fill:"black"});
+		this.label.text= "hehehe";
+	},
+	create : function(){
+
+	},
+	render : function(){
+
+	}
+};
+game.state.add('main',mainState);
+game.state.start('main');
